@@ -1,50 +1,26 @@
-# React + TypeScript + Vite
+# Flight App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## About Project
+This project is an airline ticket buying website. React, vitejs, shadcn, tailwind, react-router-dom, axios libraries are used in the project.
+This application allows users to filter, sort and view their flights in detail. Users can easily find the flights they want by selecting departure and arrival cities, dates and airlines.
+Since some data is not available in the API used, I had to manipulate many data in the data. Again, I used a proxy to store and protect the API. Since the design you gave is just a screenshot, I tried to create a design as similar as possible. The design is designed responsively. Suitable for mobile use.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Flight Filtering**: Users can filter flights by selecting departure and arrival cities, dates and flight type.
+- **Flight Sorting**: Flights can be sorted by lowest or highest price.
+- **Airline Selection**: Users can filter flights by selecting specific airlines.
+- **Date Selection**: Departure and arrival dates can be selected for flights.
+- **User Friendly Interface**: Enhances the user experience with a modern and user-friendly interface.
 
-## Expanding the ESLint configuration
+## Kurulum
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/asy37/Flight-App.git
 
-- Configure the top-level `parserOptions` property like this:
+2. **Install the project**:
+  npm install
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from "eslint-plugin-react";
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: "18.3" } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs["jsx-runtime"].rules,
-  },
-});
-```
+3. **Run the project**:
+npm run dev
