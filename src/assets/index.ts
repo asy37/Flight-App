@@ -1,0 +1,5 @@
+export {default as logo} from './a-airlines.png'
+export { default as Logo } from './a-airlines.svg'
+export { default as car } from './car.jpg'
+export { default as hotel } from './hotel.jpg'
+export { default as travel } from './travel.jpg'
